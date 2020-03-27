@@ -7,11 +7,7 @@ const app = express();
 const middlewares = [bodyParser.urlencoded(), bodyParser.json()];
 app.use(middlewares);
 
-app.post("/api/register", (req, res) => {
 
-
-  res.send("register");
-});
 
 app.post("/api/login", (req, res) => {
 
