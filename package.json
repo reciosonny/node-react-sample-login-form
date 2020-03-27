@@ -1,0 +1,31 @@
+{
+  "name": "webpack-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "client": "npm run watch --prefix client",
+    "build": "npm run build --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://reciosonny@bitbucket.org/reciosonny/webpack-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/reciosonny/webpack-playground#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "react-hot-loader": "^4.3.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4",
+    "rimraf": "^2.6.2",
+    "webpack-merge": "^4.1.4"
+  }
+}
